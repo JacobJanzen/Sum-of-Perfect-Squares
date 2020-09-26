@@ -16,7 +16,7 @@ int main(void)
 	int input, notFound = 1;
 
 	// get input
-	printf("Enter an integer: ");
+	printf("Enter a positive integer: ");
 	char line[MAX_LINE];
 	fgets(line, MAX_LINE, stdin);
 	sscanf(line, "%d", &input);
