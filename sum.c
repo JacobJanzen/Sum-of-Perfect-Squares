@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-
+#define MAX_LINE 100
 void printOutput(int input, int i, int j, int k)
 {
 	if(j == 0 && k == 0) // if input is already a perfect square
@@ -11,7 +11,6 @@ void printOutput(int input, int i, int j, int k)
 		printf("%d = %d + %d + %d\n", input, i, j, k);
 }
 
-#define MAX_LINE 100
 int main(void)
 {
 	int input, notFound = 1;
