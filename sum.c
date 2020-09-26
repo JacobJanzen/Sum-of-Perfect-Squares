@@ -18,7 +18,11 @@ int main(void)
 	// get input
 	printf("Enter a positive integer: ");
 	char line[MAX_LINE];
-	fgets(line, MAX_LINE, stdin);
+	if(fgets(line, MAX_LINE, stdin) == NULL)
+	{
+		printf("An error occured.");
+		return 1;
+	}
 	sscanf(line, "%d", &input);
 
 	//exit if invalid entry is given
